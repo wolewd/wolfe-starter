@@ -1,0 +1,19 @@
+{
+  "name": "wolfe-starter",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "wolfe": "git+ssh://git@github.com/wolewd/wolfe.git#development"
+  },
+  "scripts": {
+    "start": "bun run index.ts --dev",
+    "build": "bun run index.ts --build"
+  }
+}
