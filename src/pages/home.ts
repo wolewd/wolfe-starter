@@ -1,5 +1,5 @@
 import { WolComponent, html, define, subscribe } from "wolfe";
-import { counterStore, increment, decrement, reset } from "../stores/counter.ts";
+import { counterStore, increment, decrement, reset } from "../stores/counterStore.ts";
 
 @define("app-home")
 export class PageHome extends WolComponent {
