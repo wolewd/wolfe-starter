@@ -6,7 +6,7 @@ export class PageHome extends WolComponent {
   @subscribe(counterStore)
   state = counterStore.getState;
 
-  render() {
+  protected render() {
     return html`
       <div class="min-h-screen flex items-center justify-center font-mono">
         <div class="flex flex-col items-center gap-6 p-10 rounded-2xl border border-slate-700 bg-slate-800 shadow-xl">
