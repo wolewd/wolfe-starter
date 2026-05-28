@@ -13,4 +13,5 @@ export const applyTheme = (dark: boolean) => {
 export const toggleTheme = () => {
   themeStore.setState((prev) => ({ dark: !prev.dark }));
   applyTheme(themeStore.getState.dark);
+  console.log(themeStore.getState);
 };
