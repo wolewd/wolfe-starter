@@ -10,7 +10,7 @@ export class PageHome extends WolComponent {
     return html`
       <div class="page">
         <div class="card">
-          <span class="card_label">wolfe counters</span>
+          <span class="card_label">Hello Wolfe!</span>
           <span class="card_heading">${this.state.count}</span>
           <div class="btn-group">
             <button class="btn" @click=${increment}>+</button>

@@ -8,7 +8,7 @@ export class PageNotFound extends WolComponent {
         <div class="card">
           <span class="card_heading">404</span>
           <p class="card_label">page not found</p>
-          <a class="btn" href="/">← home</a>
+          <a class="btn" href="/">home</a>
         </div>
       </div>
     `;
