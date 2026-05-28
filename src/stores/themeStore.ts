@@ -6,12 +6,11 @@ export const themeStore = new Store(
   { persist: "theme" }
 );
 
-export const applyTheme = (dark: boolean) => {
+themeStore.subscribe(({ dark }) => {
   bodyClass({ dark, light: !dark });
-};
+  console.log(themeStore.getState)
+});
 
 export const toggleTheme = () => {
   themeStore.setState((prev) => ({ dark: !prev.dark }));
-  applyTheme(themeStore.getState.dark);
-  console.log(themeStore.getState);
 };

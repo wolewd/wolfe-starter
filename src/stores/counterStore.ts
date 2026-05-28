@@ -13,6 +13,6 @@ export const decrement = () => {
 };
 
 export const reset = () => {
-  counterStore.setState({ count: 0 });
+  counterStore.clear();
   console.log(counterStore.getState);
 };
