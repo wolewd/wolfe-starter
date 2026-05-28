@@ -2,13 +2,7 @@
 
 Install dependencies:
 ```bash
-bun add "git+ssh://git@github.com/wolewd/wolfe.git#development"
-```
-```bash
-bun pm cache rm
-```
-```bash
-rm -rf node_modules bun.lock
+bun add "git+ssh://git@github.com/wolewd/wolfe.git"
 ```
 ```bash
 bun install
@@ -16,9 +10,19 @@ bun install
 
 ---
 
+If there wolfe dependencies stuck:
+```bash
+rm -rf node_modules bun.lock
+```
+```bash
+bun pm cache rm
+```
+
+---
+
 Dev mode:
 ```bash
-bun run start
+bun run dev
 ```
 
 Build the project:
