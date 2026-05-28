@@ -4,12 +4,19 @@ const args = Bun.argv.slice(2);
 const port = 3000;
 
 if (args.includes("--build")) {
-  await buildApp({ entrypoints: ["src/app.ts"], outdir: "./public" });
+  await buildApp({
+    entrypoints: ["src/app.ts"],
+    outdir: "./public"
+  });
   process.exit(0);
 }
 
 if (args.includes("--dev")) {
-  await startDevServer({ port: port, entrypoints: ["src/app.ts"] });
+  await startDevServer({
+    port: port,
+    entrypoints: ["src/app.ts"],
+    watchDirs: ["src", "public"],
+  });
   await new Promise(() => {});
 }
 
